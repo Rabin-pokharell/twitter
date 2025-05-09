@@ -1,0 +1,105 @@
+.body {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.body::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+.userProfilePost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.writeDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userProfilePost div span {
+  border: solid 1px black;
+  color: white;
+  min-width: 200px;
+  max-width: 500px;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.placeholder:empty::before {
+  content: "What's happening?";
+  color: rgba(255, 255, 255, 0.26);
+  pointer-events: none;
+}
+
+.postBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.postBtn .iconBar {
+  margin-left: 54px;
+  display: flex;
+  gap: 20px;
+}
+
+.glow {
+  padding: 8px;
+}
+
+.glow:hover {
+  background-color: rgba(77, 187, 255, 0.151);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.emojiPicker {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  padding: 0;
+  max-width: none;
+  top: 100%;
+  left: 0;
+}
+
+.emojiWrapper {
+  position: relative;
+}
+
+.grey {
+  background-color: rgb(170, 170, 170);
+}
+
+.white {
+  background-color: white;
+}
+
+.postBtn button {
+  margin: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.userPost div {
+  color: white;
+  display: flex;
+  margin-top: 5px;
+}

@@ -1,0 +1,103 @@
+.wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.body-div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.user_post {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-div {
+  display: flex;
+}
+
+.body-username {
+  margin-left: 5px;
+  color: hsla(0, 0%, 75%, 0.589);
+  font-size: 15px;
+}
+
+.body-time {
+  margin-left: 5px;
+  color: hsla(0, 0%, 75%, 0.589);
+  display: flex;
+  align-items: center;
+}
+
+.body-message {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.lucide-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lucide-icon div {
+  color: hsla(0, 0%, 75%, 0.589);
+  display: flex;
+  align-items: center;
+}
+
+.heart:hover ~ .heart-count {
+  cursor: pointer;
+  color: hsl(342, 100%, 69%);
+}
+
+.heart:hover {
+  cursor: pointer;
+  color: hsl(342, 100%, 69%);
+  background-color: hsla(342, 100%, 79%, 0.308);
+  border-radius: 50%;
+}
+
+.messageCircle:hover ~ .messageCircle-count {
+  cursor: pointer;
+  color: rgb(69, 143, 255);
+}
+
+.messageCircle:hover {
+  cursor: pointer;
+  color: rgb(101, 163, 255);
+  background-color: rgba(69, 143, 255, 0.363);
+  border-radius: 50%;
+}
+
+.repete:hover ~ .repete-count {
+  cursor: pointer;
+  color: rgb(94, 255, 94);
+}
+
+.repete:hover {
+  cursor: pointer;
+  color: rgb(94, 255, 94);
+  background-color: rgba(173, 255, 173, 0.342);
+  border-radius: 50%;
+}
+
+.repete {
+  padding: 10px;
+}
+
+.heart {
+  padding: 10px;
+}
+
+.messageCircle {
+  padding: 10px;
+}
